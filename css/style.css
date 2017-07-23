@@ -77,6 +77,16 @@ body {
   justify-content: space-between;
 }
 
+.page-navigation::before {
+  position: absolute;
+  content: '';
+  width: 73px;
+  height: 73px;
+  background-image: url(../img/logo.png);
+  left: 26px;
+  top: 51px;
+}
+
 .page-navigation li {
   font-size: 1.071rem;
   position: relative;
@@ -119,7 +129,8 @@ h1 {
 
 .page-content .container {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  min-width: 750px;
 }
 
 .quote-slider {
@@ -127,7 +138,9 @@ h1 {
   width: 270px;
   float: left;
   margin-bottom: 105px;
+  position: relative;
 }
+
 
 .slider-wrap {
   height: 220px;
@@ -204,7 +217,6 @@ h1 {
 .page-info {
   margin-top: 65px;
   width: 60%;
-  min-width: 450px;
 }
 
 .page-info h2 {
@@ -219,7 +231,19 @@ h1 {
   font-size: 1rem;
   line-height: 2rem;
   font-family: "Arial";
+  position: relative;
 }
+
+.page-info p::before {
+  content: '';
+  width: 1px;
+  height: 297px;
+  background-color: #eaeaea;
+  position: absolute;
+  left: -8%;
+  top: -33%;
+}
+
 
 .page-footer {
   color: white;
