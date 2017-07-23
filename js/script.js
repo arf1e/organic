@@ -3,7 +3,7 @@ var leftSlide = document.querySelector('.slider-controls .left');
 var rightSlide = document.querySelector('.slider-controls .right');
 var currentSlide = 0;
 var slides = document.querySelectorAll('.quote-block .quote');
-var slideSpace = 237;
+var slideSpace = 235;
 var y = 0;
 
 function slideLeft() {
