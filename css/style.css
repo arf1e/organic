@@ -117,9 +117,16 @@ h1 {
   margin: 0;
 }
 
+.page-content .container {
+  display: flex;
+  justify-content: space-between
+}
+
 .quote-slider {
   margin-top: 50px;
-  width: 30%;
+  width: 270px;
+  float: left;
+  margin-bottom: 105px;
 }
 
 .slider-wrap {
@@ -127,16 +134,36 @@ h1 {
   overflow: hidden;
   padding-top: 25px;
   box-sizing: border-box;
+  margin-bottom: 75px;
 }
 
 .quote {
   font-size: 1.429rem;
   font-style: italic;
   color: #fe992a;
-  display: block;
-  width: 250px;
+  display: inline-block;
+  width: 245px;
   margin-bottom: 50px;
-  float: left;
+  position: relative;
+}
+
+.quote::before {
+  content: "“";
+  font-style: italic;
+  font-size: 3.429rem;
+  position: absolute;
+  top: -25px;
+  left: -4px;
+}
+
+.quote::after {
+  content: "“";
+  font-style: italic;
+  font-size: 3.429rem;
+  position: absolute;
+  left: 90px;
+  bottom: -10px;
+  transform: rotate(180deg);
 }
 
 .slider-controls {
@@ -156,11 +183,51 @@ h1 {
   background-color: #fe992a;
   box-sizing: border-box;
   color: white;
-  padding-top: 9px;
+  padding-top: 8px;
   padding-left: 12px;
   cursor: pointer;
 }
 
+.slider-controls a:not(.disabled):hover {
+  background-color: #d38128;
+}
+
+.slider-controls .disabled {
+  background-color: #ffba6e;
+  cursor: auto;
+}
+
+.page-info {
+  margin-top: 65px;
+  width: 60%;
+  min-width: 450px;
+}
+
+.page-info h2 {
+  font-size: 1.714rem;
+  font-weight: 400;
+  color: #fe992a;
+  margin-bottom: 25px;
+}
+
+.page-info p {
+  color: #737c85;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Arial";
+}
+
+.page-footer {
+  color: white;
+  background-color: #e77674;
+}
+
+.page-footer .sitemap {
+  display: flex;
+}
+
+.page-footer ul {
+}
 
 
 
