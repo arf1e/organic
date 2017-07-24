@@ -8,14 +8,6 @@
   4. Myriad Pro - footer>contacts
 */
 
-/* triangle dropdown 
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 4px 2.5px 0 2.5px;
-border-color: #ffffff transparent transparent transparent;
-*/
-
 html {
   font-size: 14px;
   font-family: 'Lato', 'Arial', sans-serif;
@@ -293,6 +285,14 @@ aside .address {
 
 aside span {
   width: 100%;
+}
+
+/* Я мало чего понимаю в том, как строится адаптивная верстка, но мне нужно, чтобы логотип убирался после достижения вот этого брейкпоинта */
+
+@media (max-width: 1200px) {
+  .page-navigation::before {
+    display: none;
+  }
 }
 
 
